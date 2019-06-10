@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    //width:600px;
+    //height: 800px;
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url("Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face{
+    font-family: Kaushan;
+    src:url("Fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background: gray;
+    text-align: center;
+    
+}
+.header_title{
+    font-family: Kaushan;
+    padding-top: 5px;
+    font-size: 48px;
+    
+}
+.header_description{
+    font-family: Poppins;
+    padding-top: 20px;
+    margin: 0% 17% 0% 17%;
+}
+
+
+
+@media(min-width:1px) and (min-height:1px){
+    html{
+        display: none;
+    }
+}
+@media(min-width:332px) and (min-height:160px){
+    html{
+        display: inline;
+    }
+    .header_description{
+        font-size: 12px;
+        margin: 0% 12% 0% 12%;
+    }
+    .header_title{
+        font-size: 24px;
+    }
+}
+@media(min-width:700px) and (min-height:360px){
+    .header_description{
+        font-size: 18px;
+    }
+    .header_title{
+        font-size: 30px;
+    }
+}
+@media(min-width:1210px) and (min-height:600px){
+    .header_description{
+        font-size: 20px;
+    }
+    .header_title{
+        font-size: 50px;
+    }
+}
+
+/*
+@media(min-width:100px) and (min-height:120px){
+    header{
+        display: none;
+    }
+}
+@media(min-width:501px) and (min-height:321px){
+    header{
+        display: inline;
+    }
+}
+*/

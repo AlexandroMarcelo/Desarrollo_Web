@@ -1,0 +1,102 @@
+body {
+  color: blue;
+}
+
+.tabla {
+  color: blue;
+}
+
+nav ul {
+  /*unordered list (bullet points)*/
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 30px;
+  text-decoration: none;
+  color: red;
+}
+
+.clase_1_loquesea {
+  font-size: 21px;
+}
+
+.clase_2_loquesea {
+  font-size: 18px;
+}
+
+.clase_3_loquesea {
+  font-size: 15px;
+}
+
+.clase_4_loquesea {
+  font-size: 12px;
+}
+
+.clase_5_loquesea {
+  font-size: 9px;
+}
+
+.leon-foto {
+  padding: 3em;
+}
+
+.perro-foto {
+  padding: 3em;
+}
+
+.gato-foto {
+  padding: 3em;
+}
+
+.elefante-foto {
+  padding: 3em;
+}
+
+img {
+  border-width: 10px;
+  padding: 100px;
+}
+
+.img2 {
+  border-width: 20px;
+  padding: 100px;
+  color: white;
+}
+
+.clase_funcion {
+  margin: 16px;
+}
+
+.clase_f2 {
+  color: red;
+}
+
+.alumnos_md {
+  color: #FF0000;
+}
+
+.alumnos_mg {
+  color: #BB0000;
+}
+
+button {
+  color: black;
+}
+button:focus {
+  color: red;
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
+  body {
+    border-width: 20px;
+    padding: 100px;
+    color: darkblue;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

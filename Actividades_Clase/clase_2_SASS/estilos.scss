@@ -1,0 +1,100 @@
+$color:blue;
+
+body{
+    color:$color;
+}
+
+.tabla{
+    color:$color;
+}
+
+nav{
+    ul{ /*unordered list (bullet points)*/
+        margin: 0; //desde el margen de la caja hasta el borde del otro elemento colindante
+        padding: 0; //espacio entre los elementos hacia la caja que contienen
+    }
+    li{
+        display: inline-block; //inline lo hace horizontal, y block dentro de un bloque
+    }
+    a{//link
+        display: block;
+        padding: 6px 30px; //4: manecillas del reloj. 2: arriba y a los lados. 1: a todos los lados
+        text-decoration: none; //para quitar el underline del link
+        color: red; //cambia el color aunque presionemos, con solo text-decoration-color cambia el color a l precionar
+
+    }
+}
+
+//funciones predefinidas
+@for $valor from 1 to 6 {
+    .clase_#{$valor}_loquesea{ //con gato para que se asignen al heder (h1, h2, h3...)
+        font-size: 24px-3*$valor;
+    }
+}
+@each $animal in leon,perro,gato,elefante {
+    .#{$animal}-foto{
+        padding: 3em; //em= dencidad de pixeles, para que no inporte los pixeles de diferentes definiciones de pantalla
+    }
+}
+
+//Mixing
+@mixin border($tamano) { //para utilizarla como una funcion serializadas
+    border-width: $tamano;
+    padding: 100px;
+}
+
+img{
+    @include border(10px);
+}
+.img2{
+    @include border(20px);
+    color: white;
+}
+
+//funciones
+@function pow($base,$exp){
+    $resultado :1;
+    @for $_ from 1 to $exp {
+        $resultado: $resultado * $base;
+    }
+    @return $resultado;
+}
+.clase_funcion{
+    margin: pow(2,5)*1px;
+}
+
+@function f2($color){
+    @return $color;
+}
+.clase_f2{
+    color:f2(red);
+}
+
+//Interpolacion
+$selector : 'alumnos';
+
+.#{$selector}_md{
+    color: #FF0000;
+}
+.#{$selector}_mg{
+    color: #BB0000;
+}
+
+//parent selector
+button{
+    color:black;
+    &:focus{
+        color:red;
+    }    
+}
+
+//media genera ciertos elementos para poderlos especificar  (mozilla, webkit), media es un if
+@media(min-width:768px) and
+    (-webkit-min-device-pixel-ratio:2),
+    (min-width:768px) and (min-resolution:192dpi){
+        
+        body{
+            @include border(20px);
+            color: darkblue;
+        }
+    }
