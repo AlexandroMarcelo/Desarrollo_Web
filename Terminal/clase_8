@@ -1,0 +1,85 @@
+Last login: Tue Jun 11 18:49:18 on ttys001
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ ls
+AndroidStudioProjects	Google Drive		VirtualBox VMs
+Applications		Library			cv2.so
+Creative Cloud Files	Movies			dumps
+Desktop			Music			neo4j
+Dev			Pictures		pencv3.pth
+Documents		PlaneaciónProyecto.pdf	redis
+Downloads		Public
+Example.pod		Samsung
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ cd /Users/alexmarcelo/Documents/Documents/Tec\ de\ Monterrey/Profesional/Verano\ 2019/Desarrollo_Web 
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ls
+Actividades_Clase	Proyecto		hola.txt
+Actividades_Individual	README.md
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ks
+-bash: ks: command not found
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ls
+Actividades_Clase	Proyecto		hola.txt
+Actividades_Individual	README.md
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ cd Actividades_Clase/
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ mkdir clase_8_typescript
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_5_SASSBootstrapHtml
+clase_3_Bootstrap		clase_8_typescript
+clase_4_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml	clase_8_typescript
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd clase_8_typescript/
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ npm intall -g typescript
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/alexmarcelo/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/npm
+
+Did you mean one of these?
+    install
+    uninstall
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 6.9.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ npm install -g typescript
+/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/tsc -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/typescript/bin/tsc
+/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/tsserver -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/typescript/bin/tsserver
++ typescript@3.5.2
+added 1 package in 2.96s
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ tsc --version
+Version 3.5.2
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ code .
+-bash: code: command not found
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ vscode .
+-bash: vscode: command not found
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ ls
+ejercicio_1.js	ejercicio_1.ts	ejercicio_2.js	ejercicio_2.ts	index.html
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ 

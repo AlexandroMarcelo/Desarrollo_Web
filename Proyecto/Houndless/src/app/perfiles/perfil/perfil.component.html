@@ -1,0 +1,28 @@
+<div class="div-perfil-usuario-perfil ">
+    <div class="img-perfil-usuario-perfil ">
+        <img src="assets/imgs/profile.png" alt="Usr photo">
+    </div>
+    <div class="div-perfil-usuario-informacion">
+        <h2> {{ perfiles.nombre }} <a class="edit-perfil" href="editar_usuario.html">{{'Perfil.Editar' | translate}}:</a></h2>
+        <label id="typeUser">Usuario normal</label>
+        <h6>
+            {{'Perfil.Informacion' | translate}}
+        </h6>
+        <ul>
+            <li>{{'Perfil.Nombre' | translate}}: <code> {{ perfiles.nombre }} </code></li>
+            <li>ID: <code>{{id}}</code></li>
+        </ul>
+        <h6>
+            {{'Perfil.Cuenta' | translate}}:
+        </h6>
+        <ul>
+            <li>{{'Perfil.Correo' | translate}}: <code> {{ perfiles.correo }}</code></li>
+            <li>{{'Perfil.Telefono' | translate}}: <code> {{ perfiles.celular }} </code></li>
+            <li>Paypal link: <code>paypal.me/pelagiodaniel</code></li>
+        </ul>
+        <form>
+            <input type="url" id="inputDonate" class="form-control" placeholder="Paypal Link">
+            <button class="btn btn-lg btn-secondary btn-block bttn-lg-signup" type="submit">{{'Perfil.Metodo-donacion' | translate}}:</button>
+        </form>
+    </div>
+</div>

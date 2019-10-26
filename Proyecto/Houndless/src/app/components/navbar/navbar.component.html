@@ -1,0 +1,43 @@
+<header *ngIf="currentUser">
+            <!-- Fixed navbar -->
+    <nav  class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="">HOUNDLESS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#">{{'Navbar.Principal' | translate }}</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="asociaciones">{{'Navbar.Asociaciones' | translate }}</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="adopciones">{{'Navbar.Adopcion' | translate }}</a>
+            </li>
+            <li class="nav-item my-2 my-sm-0">
+            <a class="nav-link" href="informacion">{{'Navbar.Informacion' | translate }}</a>
+            </li>
+            <li class="nav-item my-2 my-sm-0">
+                <a class="nav-link" [routerLink]="link" >{{ correo }}</a>
+            </li>
+            <li class="nav-item my-2 my-sm-0">
+                <a class="nav-link" href="graficas" >{{'Navbar.Graficas' | translate }}</a>
+            </li>
+            <li class="nav-item">
+                <a  class="nav-link" (click)="logout()">Logout </a>
+              </li>
+            <li class="nav-item my-2 my-sm-0">
+                <button class="btn btn-success my-2 my-sm-0" (click)="onCreateAnuncio()" style="margin-left: 7px">{{'Navbar.Anuncio' | translate }}</button>
+            </li>
+            <li class="nav-item my-2 my-sm-0">
+                <button class="btn btn-success my-2 my-sm-0" (click)="onCreateAdopcion()" style="margin-left: 10px">{{'Navbar.Anuncio-nueva-adopcion' | translate }}</button>
+            </li>
+        </ul>
+
+        <button class="btn btn-info my-2 my-sm-0 btn-xs" [ngClass]="{'disabled': activeLang == 'es'}" (click)="cambiarLenguaje('es')">ES</button>
+        <button class="btn btn-info my-2 my-sm-0 btn-xs" [ngClass]="{'disabled': activeLang == 'en'}" (click)="cambiarLenguaje('en')">EN</button>
+        </div>
+    </nav>
+</header>

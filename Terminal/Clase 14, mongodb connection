@@ -1,0 +1,197 @@
+Last login: Tue Jun 25 21:20:39 on ttys003
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ ls
+AndroidStudioProjects	Google Drive		VirtualBox VMs
+Applications		Library			cv2.so
+Creative Cloud Files	Movies			dumps
+Desktop			Music			neo4j
+Dev			Pictures		pencv3.pth
+Documents		PlaneaciónProyecto.pdf	redis
+Downloads		Public
+Example.pod		Samsung
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ cd /Users/alexmarcelo/Documents/Documents/Tec\ de\ Monterrey/Profesional/Verano\ 2019/Desarrollo_Web/Actividades_Clase/alumnos-api 
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ lb4 model
+? Model class name: Alumno
+? Please select the model base class Entity (A persisted model with an ID)
+? Allow additional (free-form) properties? No
+Model Alumno will be created in src/models/alumno.model.ts
+
+Let's add a property to Alumno
+Enter an empty property name when done
+
+? Enter the property name: nombre
+? Property type: string
+? Is nombre the ID property? No
+? Is it required?: Yes
+? Default value [leave blank for none]: 
+
+Let's add another property to Alumno
+Enter an empty property name when done
+
+? Enter the property name: apellido
+? Property type: string
+? Is apellido the ID property? No
+? Is it required?: Yes
+? Default value [leave blank for none]: 
+
+Let's add another property to Alumno
+Enter an empty property name when done
+
+? Enter the property name: matricula
+? Property type: string
+? Is matricula the ID property? Yes
+? Is it required?: Yes
+? Default value [leave blank for none]: 
+
+Let's add another property to Alumno
+Enter an empty property name when done
+
+? Enter the property name: 
+   create src/models/alumno.model.ts
+   update src/models/index.ts
+
+Model Alumno was created in src/models/
+
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ lb4 datasource
+? Datasource name: mongo_conn
+? Select the connector for mongo_conn: MongoDB (supported by StrongLoop)
+? Connection String url to override other settings (eg: mongodb://username:pass
+word@hostname:port/database): 
+? host: cluster0-qbjef.mongodb.net
+? port: 27017
+? user: alex
+? password: [hidden]
+? database: verano2019
+? Feature supported by MongoDB v3.1.0 and above: Yes
+   create src/datasources/mongo-conn.datasource.json
+   create src/datasources/mongo-conn.datasource.ts
+npm WARN alumnos_api@1.0.0 No license field.
+
++ loopback-connector-mongodb@4.2.0
+added 10 packages in 5.135s
+   update src/datasources/index.ts
+
+Datasource MongoConn was created in src/datasources/
+
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ lb4 repository
+? Please select the datasource MongoConnDatasource
+? Select the model(s) you want to generate a repository Alumno
+? Please select the repository base class DefaultCrudRepository (Legacy juggler
+ bridge)
+   create src/repositories/alumno.repository.ts
+   update src/repositories/index.ts
+
+Repository AlumnoRepository was created in src/repositories/
+
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ lb4 controller
+? Controller class name: Alumnos
+Controller Alumnos will be created in src/controllers/alumnos.controller.ts
+
+? What kind of controller would you like to generate? REST Controller with CRUD
+ functions
+? What is the name of the model to use with this CRUD repository? Alumno
+? What is the name of your CRUD repository? AlumnoRepository
+? What is the type of your ID? string
+? What is the base HTTP path name of the CRUD operations? /alumnos
+   create src/controllers/alumnos.controller.ts
+   update src/controllers/index.ts
+
+Controller Alumnos was created in src/controllers/
+
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ npm start
+
+> alumnos_api@1.0.0 prestart /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> npm run build
+
+
+> alumnos_api@1.0.0 build /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> lb-tsc
+
+
+> alumnos_api@1.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> node .
+
+Server is running at http://[::1]:3000
+Try http://[::1]:3000/ping
+Unhandled error in GET /alumnos/count: 500 MongoNetworkError: failed to connect to server [cluster0-qbjef.mongodb.net:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND cluster0-qbjef.mongodb.net cluster0-qbjef.mongodb.net:27017]
+    at Pool.<anonymous> (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/topologies/server.js:431:11)
+    at Pool.emit (events.js:180:13)
+    at connect (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/pool.js:557:14)
+    at makeConnection (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:39:11)
+    at callback (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:261:5)
+    at Socket.err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:286:7)
+    at Object.onceWrapper (events.js:272:13)
+    at Socket.emit (events.js:180:13)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:178:19)
+(node:77597) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [cluster0-qbjef.mongodb.net:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND cluster0-qbjef.mongodb.net cluster0-qbjef.mongodb.net:27017]
+    at Pool.<anonymous> (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/topologies/server.js:431:11)
+    at Pool.emit (events.js:180:13)
+    at connect (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/pool.js:557:14)
+    at makeConnection (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:39:11)
+    at callback (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:261:5)
+    at Socket.err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:286:7)
+    at Object.onceWrapper (events.js:272:13)
+    at Socket.emit (events.js:180:13)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:178:19)
+(node:77597) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:77597) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+Connection fails: MongoNetworkError: failed to connect to server [cluster0-qbjef.mongodb.net:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND cluster0-qbjef.mongodb.net cluster0-qbjef.mongodb.net:27017]
+It will be retried for the next request.
+/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/topologies/server.js:240
+            throw err;
+            ^
+
+MongoNetworkError: failed to connect to server [cluster0-qbjef.mongodb.net:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND cluster0-qbjef.mongodb.net cluster0-qbjef.mongodb.net:27017]
+    at Pool.<anonymous> (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/topologies/server.js:431:11)
+    at Pool.emit (events.js:180:13)
+    at connect (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/pool.js:557:14)
+    at makeConnection (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:39:11)
+    at callback (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:261:5)
+    at Socket.err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:286:7)
+    at Object.onceWrapper (events.js:272:13)
+    at Socket.emit (events.js:180:13)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:178:19)
+Emitted 'error' event at:
+    at MongoConnDataSource.postInit (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/loopback-datasource-juggler/lib/datasource.js:486:16)
+    at /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/loopback-connector-mongodb/lib/mongodb.js:323:23
+    at err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/utils.js:411:14)
+    at executeCallback (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/utils.js:401:25)
+    at err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/operations/mongo_client_ops.js:285:21)
+    at connectCallback (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/operations/mongo_client_ops.js:265:5)
+    at server.connect (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/operations/mongo_client_ops.js:353:14)
+    at Server.<anonymous> (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb/lib/topologies/server.js:237:11)
+    at Object.onceWrapper (events.js:272:13)
+    at Server.emit (events.js:180:13)
+    at Pool.<anonymous> (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/topologies/server.js:429:21)
+    at Pool.emit (events.js:180:13)
+    [... lines matching original stack trace ...]
+    at Socket.err (/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/mongodb-core/lib/connection/connect.js:286:7)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! alumnos_api@1.0.0 start: `node .`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the alumnos_api@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/alexmarcelo/.npm/_logs/2019-06-27T01_58_03_487Z-debug.log
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ npm start
+
+> alumnos_api@1.0.0 prestart /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> npm run build
+
+
+> alumnos_api@1.0.0 build /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> lb-tsc
+
+
+> alumnos_api@1.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> node .
+
+Server is running at http://[::1]:3000
+Try http://[::1]:3000/ping
+^C
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ 

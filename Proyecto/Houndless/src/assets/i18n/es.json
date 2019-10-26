@@ -1,0 +1,120 @@
+{
+    "Navbar":
+    { 
+        "Principal": "Principal",
+        "Asociaciones": "Asociaciones",
+        "Adopcion": "Adopción", 
+        "Informacion": "Información", 
+        "Perfil": "Perfil", 
+        "Graficas": "Gráficas",
+        "Anuncio": "+ Anuncio",
+        "Anuncio-nueva-adopcion": "+ Adopción"
+    },
+    "NuevoAnuncio":
+    {
+        "titulo":"Escriba el título del anuncio",
+        "titulo-placeholder":"Agregue el nuevo título",
+        "descripcion":"Aquí escriba toda la información que considere importante sobre la condición actual del perro",
+        "descripcion-placeholder":"Agregue la descripción del anuncio",
+        "ubicacion":"Dónde fue encontrado el perro. Es relevante porque puede ser un perrito perdido del área",
+        "ubicacion-placeholder":"Agregue sus coordenadas",
+        "raza":"Seleccione la raza, si no la conoce, seleccione otro",
+        "publicar": "Publicar",
+        "imagen": "Seleccione una imagen",
+        "municipio": "Municipio",
+        "estado": "Estado",
+        "colonia": "Colonia",
+        "tags":"Tags"        
+    },
+    "NuevaAdopcion":
+    {
+        "titulo":"Título del anuncio",
+        "tituloP":"Escriba el título del anuncio",
+        "descripcion":"Descripción del anuncio",
+        "descripcionP":"Aquí escriba toda la información que considere importante sobre la condición actual del perro",
+        "edad_perro":"Edad del perro",
+        "edad_perroP":"La edad en años estimada del perro",
+        "raza":"Seleccione la raza del perro, si no la conoce, seleccione otro",
+        "publicar": "Publicar",
+        "imagen": "Seleccione una imagen"
+    },
+    "Anuncio":
+    {
+        "Donar":"Donar",
+        "Detalle": "Detalle",
+        "Raza": "Raza"
+    },
+    "Adopcion":{
+        "Adoptar":"Adoptar",
+        "Razon": "Motivo",
+        "RazonP": "¿Cuál es el motivo para adoptar?",
+        "Animales": "Animales",
+        "AnimalesP": "¿Cuántos animales tiene actualmente?",
+        "Espacio": "Espacio",
+        "EspacioP": "¿Cuenta con espacio para tener al perro? ¿De cuánto es?",
+        "Publicar": "¡Adoptar!",
+        "Edad":"Edad"
+    },
+    "Asociacion":
+    {
+        "Donar":"Donar",
+        "Contactar":"Contactar",
+        "Publicaciones":"Ver Publicaciones"
+    },
+    "NuevoUsuario":
+    {
+        "Nombre":"Nombre",
+        "NombreP":"Ingrese su nombre completo",
+        "Sesion":"Iniciar Sesión",
+        "Registro":"Registrarse",
+        "Correo":"Correo Electrónico",
+        "CorreoP":"Ingrese un correo electrónico válido",
+        "CorreoLP":"Ingrese su correo electrónico",
+        "Contrasenia":"Contraseña",
+        "ContraseniaP":"Ingrese una contraseña",
+        "ContraseniaLP":"Ingrese su contraseña",
+        "Contrasenia2": "Repetir Contraseña",
+        "Contrasenia2P": "Repita la contraseña previamente ingresada",
+        "Crear": "Crear Usuario",
+        "Input": "CAMPO REQUERIDO",
+        "Celular":"Celular",
+        "ApellidoP":"Apellido Paterno",
+        "ApellidoM":"Apellido Materno",
+        "CelularP":"Ingrese su número de celular",
+        "ApellidoPP":"Ingrese su apellido paterno",
+        "ApellidoMP":"Ingrese su apellido materno"
+    },
+    "Donacion":
+    {
+        "Donador": "Donador",
+        "Cantidad": "Cantidad a Donar",
+        "Mensaje": "Mensaje en su donación",
+        "DonadorP": "Escriba el nombre del donador, puede ser anónimo",
+        "CantidadP": "Escriba la cantidad a donar en pesos",
+        "MensajeP": "Escriba algún mensaje que deseé hacer llegar al cuidador del perro",
+        "Donar": "¡Donar!"
+    },
+    "Informacion":
+    {
+        "Carousel-1": "Ámalos como ellos a ti.",
+        "Carousel-2": "Necesitan una casa como tú.",
+        "Carousel-3": "Trátalos como quieres ser tratado.",
+        "Mision": "Misión",
+        "Vision": "Visión",
+        "Valores": "Valores"
+    },
+    "Perfil":
+    {
+        "Editar": "Editar",
+        "Informacion":"Información Personal",
+        "Nombre":"Nombre completo",
+        "Cuenta":"Datos de cuenta",
+        "Correo":"Correo",
+        "Telefono":"Número telefónico",
+        "Metodo-donacion": "Agregar método de donación"
+    },
+    "SearchBar":
+    {
+        "Buscar": "Buscar"
+    }
+}

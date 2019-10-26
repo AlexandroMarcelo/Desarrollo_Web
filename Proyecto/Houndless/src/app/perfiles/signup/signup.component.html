@@ -1,0 +1,70 @@
+<div class="div-mayor-form">
+    <div class="div-contenido-signup">
+        <form #NuevoUsuario="ngForm" class="div-form-login" >
+          <img class="logotipo-signup" src="assets/imgs/Perros_callejeros.jpg" alt="Logotipo">
+          <h4 class="header-principal-crearcuenta">{{'NuevoUsuario.Crear' | translate}}</h4>
+          
+          <div class="form-group">
+            <label for="nombre">{{'NuevoUsuario.Nombre' | translate}}</label>
+            <input #nombre="ngModel" type="text" class="form-control" id="nombre" placeholder="{{'NuevoUsuario.NombreP' | translate}}" [(ngModel)]="nuevo_usuario.nombre" name="nombre" required>
+            <div *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">
+              <p *ngIf="nombre.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="apellidoP">{{'NuevoUsuario.ApellidoP' | translate}}</label>
+            <input #apellidoP="ngModel" type="text" class="form-control" id="apellidoP" placeholder="{{'NuevoUsuario.ApellidoPP' | translate}}" [(ngModel)]="nuevo_usuario.apellido_p" name="apellidoP" required>
+            <div *ngIf="apellidoP.errors && (apellidoP.dirty || apellidoP.touched)">
+              <p *ngIf="apellidoP.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="apellidoM">{{'NuevoUsuario.ApellidoM' | translate}}</label>
+            <input #apellidoM="ngModel" type="text" class="form-control" id="apellidoM" placeholder="{{'NuevoUsuario.ApellidoMP' | translate}}" [(ngModel)]="nuevo_usuario.apellido_m" name="apellidoM" required>
+            <div *ngIf="apellidoM.errors && (apellidoM.dirty || apellidoM.touched)">
+              <p *ngIf="apellidoM.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="celular">{{'NuevoUsuario.Celular' | translate}}</label>
+            <input #celular="ngModel" type="text" class="form-control" id="celular" placeholder="{{'NuevoUsuario.CelularP' | translate}}" [(ngModel)]="nuevo_usuario.cel" name="celular" required>
+            <div *ngIf="celular.errors && (celular.dirty || celular.touched)">
+              <p *ngIf="celular.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">{{'NuevoUsuario.Correo' | translate}}</label>
+            <input #email="ngModel" type="email" class="form-control" id="email" placeholder="{{'NuevoUsuario.CorreoP' | translate}}" [(ngModel)]="nuevo_usuario.correo" name="email" required="">
+            <div *ngIf="email.errors && (email.dirty || email.touched)">
+              <p *ngIf="email.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label for="contrasenia">{{'NuevoUsuario.Contrasenia' | translate}}</label>
+            <input #password="ngModel" type="password" class="form-control" id="contrasenia" placeholder="{{'NuevoUsuario.ContraseniaP' | translate}}" name="contrasenia" [(ngModel)]="nuevo_usuario.contrasenia" required="">
+            <div *ngIf="password.errors && (password.dirty || password.touched)">
+              <p *ngIf="password.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="contrasenia2">{{'NuevoUsuario.Contrasenia2' | translate}}</label>
+            <input #password2="ngModel" type="password" class="form-control" id="contrasenia2" placeholder="{{'NuevoUsuario.Contrasenia2P' | translate}}" name="contrasenia2" [(ngModel)]="hola" required="">
+            <div *ngIf="password2.errors && (password2.dirty || password2.touched)">
+                <p *ngIf="password2.errors.required" class="required-input">{{'NuevoUsuario.Input' | translate}}</p>
+              </div>
+          </div>
+      
+          <div>
+            <button class="btn btn-lg btn-primary btn-block bttn-lg" type="submit" (click)="enviar();NuevoUsuario.reset();">{{'NuevoUsuario.Registro' | translate}}</button>
+            <a class="bttn-rg" href="login" style="font-size:14pt;">{{ 'NuevoUsuario.Sesion' | translate}}</a>
+          </div>
+      </form>
+    </div>
+</div>
+

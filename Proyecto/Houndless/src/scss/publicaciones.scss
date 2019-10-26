@@ -1,0 +1,125 @@
+h1{
+    color:gray;
+    font-size: 25px;
+}
+.div-principal-anuncios{
+    //position: relative;
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 4em;
+    padding: 2%;
+    height:auto;
+}
+
+.div-principal-publicacion{
+    //position: fixed;
+    background-color: #e0e0e0;
+    width:100%;
+    height: 25em;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+}
+
+.div-principal-imagen{
+    box-sizing: border-box;
+    padding: 2% 2% 0px 2%;
+    width:40%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.div-principal-imagen img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div-principal-mapa img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div-principal-informacion{
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2em;
+    width:59%;
+    height:100%;
+    display: inline-block;
+}
+
+.div-principal-mapa{
+    vertical-align: top;
+    width:24%;
+    height:100%;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.boton{
+    margin-left: 10px;
+    border-color: black;
+}
+
+.iframe-mapa{
+    width: 100%;
+    height: 100%;
+}
+
+.boton-donaciones-principal{
+    background-color: #e0e0e0;
+    text-align: right; 
+    padding-bottom: 5px;
+    padding-right: 15px;
+    box-align: border-box;
+    //bottom: 10%;
+}
+@media (max-width:599px){
+    .div-principal-mapa{
+        display: none;
+    }
+    .div-principal-informacion{
+        width:40%;
+    }
+    .div-principal-imagen{
+        width:58%;
+    }
+}
+/*
+@media (min-width:600px){
+    .div-principal-publicacion{
+        height: 10em;
+    }
+}
+@media (min-width:1000px){
+    .div-principal-publicacion{
+        height: 15em;
+    }
+}
+*/
+@media (max-width:300px){
+    .div-principal-informacion{
+        font-size: 6px;
+    }
+    h1{
+        font-size: 10px;
+    }
+}
+@media (max-width:600px){
+    .div-principal-informacion{
+        font-size: 9px;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+@media (max-width:1000px){
+
+    .div-principal-informacion{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}

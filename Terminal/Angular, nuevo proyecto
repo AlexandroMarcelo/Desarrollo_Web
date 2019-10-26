@@ -1,0 +1,759 @@
+Last login: Tue Jun 11 18:49:18 on ttys001
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ ls
+AndroidStudioProjects	Google Drive		VirtualBox VMs
+Applications		Library			cv2.so
+Creative Cloud Files	Movies			dumps
+Desktop			Music			neo4j
+Dev			Pictures		pencv3.pth
+Documents		PlaneaciónProyecto.pdf	redis
+Downloads		Public
+Example.pod		Samsung
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ cd /Users/alexmarcelo/Documents/Documents/Tec\ de\ Monterrey/Profesional/Verano\ 2019/Desarrollo_Web 
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ls
+Actividades_Clase	Proyecto		hola.txt
+Actividades_Individual	README.md
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ks
+-bash: ks: command not found
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ ls
+Actividades_Clase	Proyecto		hola.txt
+Actividades_Individual	README.md
+MacBook-Pro-de-Alexandro:Desarrollo_Web alexmarcelo$ cd Actividades_Clase/
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ mkdir clase_8_typescript
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_5_SASSBootstrapHtml
+clase_3_Bootstrap		clase_8_typescript
+clase_4_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml	clase_8_typescript
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd clase_8_typescript/
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ npm intall -g typescript
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/alexmarcelo/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/npm
+
+Did you mean one of these?
+    install
+    uninstall
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 6.9.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ npm install -g typescript
+/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/tsc -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/typescript/bin/tsc
+/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/tsserver -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/typescript/bin/tsserver
++ typescript@3.5.2
+added 1 package in 2.96s
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ tsc --version
+Version 3.5.2
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ code .
+-bash: code: command not found
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ vscode .
+-bash: vscode: command not found
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ ls
+ejercicio_1.js	ejercicio_1.ts	ejercicio_2.js	ejercicio_2.ts	index.html
+MacBook-Pro-de-Alexandro:clase_8_typescript alexmarcelo$ cd ..
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml	clase_8_typescript
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ mkdir clase_9_angular
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd clase_9
+-bash: cd: clase_9: No such file or directory
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd clase_9_angular/
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ls
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ node --version
+v9.11.2
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ npm --version
+5.6.0
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ npm install -g @angular/cli
+/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/ng -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/@angular/cli/bin/ng
+
+> @angular/cli@8.0.3 postinstall /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. No
++ @angular/cli@8.0.3
+added 228 packages in 18.212s
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 6.9.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ls
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng --version
+You are running version v9.11.2 of Node.js, which is not supported by Angular CLI 8.0+.
+The official Node.js version that is supported is 10.9 or greater.
+
+Please visit https://nodejs.org/en/ to find instructions on how to update Node.js.
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ nvm ls node
+->      v9.11.2
+       v10.16.0
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ nvm use 10
+Now using node v10.16.0 (npm v6.9.0)
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng --version
+-bash: ng: command not found
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ nvm ls node
+        v9.11.2
+->     v10.16.0
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ npm install -g @angular/cli
+/Users/alexmarcelo/.nvm/versions/node/v10.16.0/bin/ng -> /Users/alexmarcelo/.nvm/versions/node/v10.16.0/lib/node_modules/@angular/cli/bin/ng
+
+> @angular/cli@8.0.3 postinstall /Users/alexmarcelo/.nvm/versions/node/v10.16.0/lib/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
++ @angular/cli@8.0.3
+added 228 packages from 175 contributors in 4.712s
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng --version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 8.0.3
+Node: 10.16.0
+OS: darwin x64
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.800.3
+@angular-devkit/core         8.0.3
+@angular-devkit/schematics   8.0.3
+@schematics/angular          8.0.3
+@schematics/update           0.800.3
+rxjs                         6.4.0
+    
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ls
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng new proyecto-angular --style=scss
+? Would you like to add Angular routing? No
+CREATE proyecto-angular/README.md (1032 bytes)
+CREATE proyecto-angular/.editorconfig (246 bytes)
+CREATE proyecto-angular/.gitignore (629 bytes)
+CREATE proyecto-angular/angular.json (3593 bytes)
+CREATE proyecto-angular/package.json (1289 bytes)
+CREATE proyecto-angular/tsconfig.json (470 bytes)
+CREATE proyecto-angular/tslint.json (1985 bytes)
+CREATE proyecto-angular/browserslist (429 bytes)
+CREATE proyecto-angular/karma.conf.js (1028 bytes)
+CREATE proyecto-angular/tsconfig.app.json (210 bytes)
+CREATE proyecto-angular/tsconfig.spec.json (270 bytes)
+CREATE proyecto-angular/src/favicon.ico (5430 bytes)
+CREATE proyecto-angular/src/index.html (302 bytes)
+CREATE proyecto-angular/src/main.ts (372 bytes)
+CREATE proyecto-angular/src/polyfills.ts (2838 bytes)
+CREATE proyecto-angular/src/styles.scss (80 bytes)
+CREATE proyecto-angular/src/test.ts (642 bytes)
+CREATE proyecto-angular/src/assets/.gitkeep (0 bytes)
+CREATE proyecto-angular/src/environments/environment.prod.ts (51 bytes)
+CREATE proyecto-angular/src/environments/environment.ts (662 bytes)
+CREATE proyecto-angular/src/app/app.module.ts (314 bytes)
+CREATE proyecto-angular/src/app/app.component.scss (0 bytes)
+CREATE proyecto-angular/src/app/app.component.html (1120 bytes)
+CREATE proyecto-angular/src/app/app.component.spec.ts (1008 bytes)
+CREATE proyecto-angular/src/app/app.component.ts (221 bytes)
+CREATE proyecto-angular/e2e/protractor.conf.js (810 bytes)
+CREATE proyecto-angular/e2e/tsconfig.json (214 bytes)
+CREATE proyecto-angular/e2e/src/app.e2e-spec.ts (645 bytes)
+CREATE proyecto-angular/e2e/src/app.po.ts (251 bytes)
+
+> fsevents@1.2.9 install /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[fsevents] Success: "/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" is installed via remote
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/karma/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+
+> @angular/cli@8.0.3 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+added 1080 packages from 1058 contributors and audited 19005 packages in 31.99s
+found 0 vulnerabilities
+
+    Directory is already under version control. Skipping initialization of git.
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ 
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng serve
+The serve command requires to be run in an Angular project, but a project definition could not be found.
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ cd ..
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_4_SASSBootstrapHtml	clase_8_typescript
+clase_3_Bootstrap		clase_5_SASSBootstrapHtml	clase_9_angular
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ rm -Rf clase_9_angular/
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ mkdir clase_9_angular
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd clase_9_angular/
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng --version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 8.0.3
+Node: 10.16.0
+OS: darwin x64
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.800.3
+@angular-devkit/core         8.0.3
+@angular-devkit/schematics   8.0.3
+@schematics/angular          8.0.3
+@schematics/update           0.800.3
+rxjs                         6.4.0
+    
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ng new proyecto-angular --style=scss
+? Would you like to add Angular routing? No
+CREATE proyecto-angular/README.md (1032 bytes)
+CREATE proyecto-angular/.editorconfig (246 bytes)
+CREATE proyecto-angular/.gitignore (629 bytes)
+CREATE proyecto-angular/angular.json (3593 bytes)
+CREATE proyecto-angular/package.json (1289 bytes)
+CREATE proyecto-angular/tsconfig.json (470 bytes)
+CREATE proyecto-angular/tslint.json (1985 bytes)
+CREATE proyecto-angular/browserslist (429 bytes)
+CREATE proyecto-angular/karma.conf.js (1028 bytes)
+CREATE proyecto-angular/tsconfig.app.json (210 bytes)
+CREATE proyecto-angular/tsconfig.spec.json (270 bytes)
+CREATE proyecto-angular/src/favicon.ico (5430 bytes)
+CREATE proyecto-angular/src/index.html (302 bytes)
+CREATE proyecto-angular/src/main.ts (372 bytes)
+CREATE proyecto-angular/src/polyfills.ts (2838 bytes)
+CREATE proyecto-angular/src/styles.scss (80 bytes)
+CREATE proyecto-angular/src/test.ts (642 bytes)
+CREATE proyecto-angular/src/assets/.gitkeep (0 bytes)
+CREATE proyecto-angular/src/environments/environment.prod.ts (51 bytes)
+CREATE proyecto-angular/src/environments/environment.ts (662 bytes)
+CREATE proyecto-angular/src/app/app.module.ts (314 bytes)
+CREATE proyecto-angular/src/app/app.component.scss (0 bytes)
+CREATE proyecto-angular/src/app/app.component.html (1120 bytes)
+CREATE proyecto-angular/src/app/app.component.spec.ts (1008 bytes)
+CREATE proyecto-angular/src/app/app.component.ts (221 bytes)
+CREATE proyecto-angular/e2e/protractor.conf.js (810 bytes)
+CREATE proyecto-angular/e2e/tsconfig.json (214 bytes)
+CREATE proyecto-angular/e2e/src/app.e2e-spec.ts (645 bytes)
+CREATE proyecto-angular/e2e/src/app.po.ts (251 bytes)
+
+> fsevents@1.2.9 install /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[fsevents] Success: "/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" is installed via remote
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/karma/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+
+> @angular/cli@8.0.3 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+added 1080 packages from 1058 contributors and audited 19005 packages in 23.358s
+found 0 vulnerabilities
+
+    Directory is already under version control. Skipping initialization of git.
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ ls
+proyecto-angular
+MacBook-Pro-de-Alexandro:clase_9_angular alexmarcelo$ cd proyecto-angular/
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng serve
+                                                                                          
+Date: 2019-06-18T01:51:13.664Z
+Hash: 7e86831d26c959c5f065
+Time: 9534ms
+chunk {main} main.js, main.js.map (main) 10 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.9 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm install --save bootstrap
+npm WARN bootstrap@4.3.1 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+npm WARN bootstrap@4.3.1 requires a peer of popper.js@^1.14.7 but none is installed. You must install peer dependencies yourself.
+
++ bootstrap@4.3.1
+added 1 package from 2 contributors and audited 19006 packages in 6.239s
+found 0 vulnerabilities
+
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm install --save popper.js
+npm WARN bootstrap@4.3.1 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+
++ popper.js@1.15.0
+added 1 package from 2 contributors and audited 19007 packages in 6.234s
+found 0 vulnerabilities
+
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng add bootstrap
+Skipping installation: Package already installed
+The package that you are trying to add does not support schematics. You can try using a different version of the package or contact the package author to add ng-add support.
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm install --save jquery
++ jquery@3.4.1
+added 1 package from 1 contributor and audited 19008 packages in 6.64s
+found 0 vulnerabilities
+
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng serve
+                                                                                          
+Date: 2019-06-18T02:37:33.549Z
+Hash: ff85eadfe682988ef148
+Time: 9035ms
+chunk {main} main.js, main.js.map (main) 10.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 17.1 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+
+ERROR in ./src/styles.scss (./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/lib/loader.js??ref--13-3!./src/styles.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+
+@import "bootstrap"
+       ^
+      Can't find stylesheet to import.
+  ╷
+2 │ @import "bootstrap"
+  │         ^^^^^^^^^^^
+  ╵
+  stdin 2:9  root stylesheet
+      in /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular/src/styles.scss (line 2, column 9)
+ERROR in multi ../node_modules/bootstrap/scss/bootstrap.scss ./src/styles.scss
+Module not found: Error: Can't resolve '/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/node_modules/bootstrap/scss/bootstrap.scss' in '/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular'
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Failed to compile.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-18T02:38:18.612Z - Hash: 8212e67755e546bfd6a1 - Time: 307ms
+4 unchanged chunks
+chunk {styles} styles.js, styles.js.map (styles) 17.3 kB [initial] [rendered]
+
+ERROR in multi ../node_modules/bootstrap/scss/bootstrap.scss ./src/styles.scss
+Module not found: Error: Can't resolve '/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/node_modules/bootstrap/scss/bootstrap.scss' in '/Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular'
+ℹ ｢wdm｣: Failed to compile.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng serve
+                                                                                          
+Date: 2019-06-18T02:38:40.421Z
+Hash: 1d59913f750d25461f0c
+Time: 10105ms
+chunk {main} main.js, main.js.map (main) 10.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 841 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ np start
+-bash: np: command not found
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm start
+
+> proyecto-angular@0.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular
+> ng serve
+
+                                                                                          
+Date: 2019-06-18T02:40:16.013Z
+Hash: 1d59913f750d25461f0c
+Time: 11688ms
+chunk {main} main.js, main.js.map (main) 10.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 841 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ls
+README.md		karma.conf.js		src			tslint.json
+angular.json		node_modules		tsconfig.app.json
+browserslist		package-lock.json	tsconfig.json
+e2e			package.json		tsconfig.spec.json
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng generate component titulo
+CREATE src/app/titulo/titulo.component.scss (0 bytes)
+CREATE src/app/titulo/titulo.component.html (25 bytes)
+CREATE src/app/titulo/titulo.component.spec.ts (628 bytes)
+CREATE src/app/titulo/titulo.component.ts (270 bytes)
+UPDATE src/app/app.module.ts (396 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ nvm ls
+        v9.11.2
+->     v10.16.0
+default -> 9 (-> v9.11.2)
+node -> stable (-> v10.16.0) (default)
+stable -> 10.16 (-> v10.16.0) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/dubnium (-> v10.16.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.16.0 (-> N/A)
+lts/dubnium -> v10.16.0
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng g c titulo2
+CREATE src/app/titulo2/titulo2.component.scss (0 bytes)
+CREATE src/app/titulo2/titulo2.component.html (26 bytes)
+CREATE src/app/titulo2/titulo2.component.spec.ts (635 bytes)
+CREATE src/app/titulo2/titulo2.component.ts (274 bytes)
+UPDATE src/app/app.module.ts (482 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm start
+
+> proyecto-angular@0.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular
+> ng serve
+
+                                                                                          
+Date: 2019-06-19T00:07:45.199Z
+Hash: 7926e9f31b2e7aefe22c
+Time: 17849ms
+chunk {main} main.js, main.js.map (main) 15.4 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 841 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:08:09.104Z - Hash: 8ef8439fcfb0c451f3cd - Time: 186ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.4 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:09:37.763Z - Hash: 8ef8439fcfb0c451f3cd - Time: 1955ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:09:46.902Z - Hash: 445fa9907c7df7ec03b2 - Time: 120ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+ 95% emitting CopyPluginℹ ｢wdm｣: wait until bundle finished: /                            
+                                       
+Date: 2019-06-19T00:10:25.203Z - Hash: a61e0c1157d15326dcc3 - Time: 1499ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:10:28.742Z - Hash: 445fa9907c7df7ec03b2 - Time: 98ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:10:41.583Z - Hash: bbdfb965479d1009981f - Time: 1104ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:10:51.837Z - Hash: f0e0652022e6ce6521a7 - Time: 84ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm start
+
+> proyecto-angular@0.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular
+> ng serve
+
+ 30% building 36/36 modules 0 activeℹ ｢wdm｣: wait until bundle finished: /     
+                                                                                          
+Date: 2019-06-19T00:11:46.704Z
+Hash: f0e0652022e6ce6521a7
+Time: 10036ms
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 841 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:12:20.027Z - Hash: f0e0652022e6ce6521a7 - Time: 243ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:12:30.781Z - Hash: 03b62c575c811f90786d - Time: 184ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:12:39.578Z - Hash: f0e0652022e6ce6521a7 - Time: 156ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:13:42.612Z - Hash: 0492da0d4c6d8abb1231 - Time: 135ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.4 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:14:05.829Z - Hash: 967cd92991dec1ff7ddf - Time: 1962ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:14:15.036Z - Hash: 967cd92991dec1ff7ddf - Time: 82ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:14:42.340Z - Hash: 967cd92991dec1ff7ddf - Time: 1141ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:18:17.126Z - Hash: dc8db174ccb6a76286ca - Time: 177ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.5 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:26:06.098Z - Hash: 32905f5989d24d36629a - Time: 1465ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.6 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:26:20.017Z - Hash: df3ce82f56f12dedc974 - Time: 128ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.6 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:26:27.102Z - Hash: 7700353f321ae1ae1eef - Time: 118ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.6 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:27:44.283Z - Hash: 1dcce1641d42720ff255 - Time: 194ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.7 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:34:10.849Z - Hash: ead406ef476bb420689e - Time: 253ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.7 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:34:30.191Z - Hash: 7dc61d52112485adb991 - Time: 134ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.7 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:41:03.199Z - Hash: 8597a4b3868e95d9a509 - Time: 1933ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.8 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:41:05.526Z - Hash: 5869affef7d19ea32c70 - Time: 113ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.8 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T00:41:10.162Z - Hash: 5869affef7d19ea32c70 - Time: 733ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:05:23.142Z - Hash: 10297f4edc7ba9e5fc5f - Time: 550ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.8 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:05:32.278Z - Hash: bc029e2600cbd24df12c - Time: 1362ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:06:51.101Z - Hash: 6efd2749e417a8d4dfbd - Time: 267ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:06:56.126Z - Hash: 6efd2749e417a8d4dfbd - Time: 1043ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:07:13.168Z - Hash: 266450eb3533b4662882 - Time: 109ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:07:41.637Z - Hash: 9b33773c20cc2d1990ba - Time: 1191ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:08:05.690Z - Hash: edd31c4a2582db223df1 - Time: 110ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:08:18.310Z - Hash: 21aa175646ac25f2e451 - Time: 938ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:08:22.853Z - Hash: 1e40e6336026c09a78b6 - Time: 176ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:09:07.755Z - Hash: 12c5f907b289b9cc087e - Time: 192ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:09:14.165Z - Hash: 76c41a66572cb029b549 - Time: 1411ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 15.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:13:43.883Z - Hash: 8c5d790c742c5ef5d940 - Time: 386ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:14:33.147Z - Hash: a7200390ca414b97ccfb - Time: 130ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.1 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:20:14.521Z - Hash: debf465434f22f69c79d - Time: 1902ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 16.1 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T01:20:23.676Z - Hash: debf465434f22f69c79d - Time: 189ms
+5 unchanged chunks
+ℹ ｢wdm｣: Compiled successfully.
+^C
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng generate service alumnos
+CREATE src/app/alumnos.service.spec.ts (338 bytes)
+CREATE src/app/alumnos.service.ts (136 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng generate service services/alumnos
+CREATE src/app/services/alumnos.service.spec.ts (338 bytes)
+CREATE src/app/services/alumnos.service.ts (136 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng g c alumnos
+CREATE src/app/alumnos/alumnos.component.scss (0 bytes)
+CREATE src/app/alumnos/alumnos.component.html (26 bytes)
+CREATE src/app/alumnos/alumnos.component.spec.ts (635 bytes)
+CREATE src/app/alumnos/alumnos.component.ts (274 bytes)
+UPDATE src/app/app.module.ts (585 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng generate service services/profesores
+CREATE src/app/services/profesores.service.spec.ts (353 bytes)
+CREATE src/app/services/profesores.service.ts (139 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ ng g c alumno
+CREATE src/app/alumno/alumno.component.scss (0 bytes)
+CREATE src/app/alumno/alumno.component.html (25 bytes)
+CREATE src/app/alumno/alumno.component.spec.ts (628 bytes)
+CREATE src/app/alumno/alumno.component.ts (270 bytes)
+UPDATE src/app/app.module.ts (667 bytes)
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ npm start
+
+> proyecto-angular@0.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/clase_9_angular/proyecto-angular
+> ng serve
+
+                                                                                          
+Date: 2019-06-19T02:12:15.578Z
+Hash: 0b475798b79be7def4d4
+Time: 10489ms
+chunk {main} main.js, main.js.map (main) 23.9 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 248 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 841 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T02:20:40.301Z - Hash: c5f94acd16b5f18b73e6 - Time: 327ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 23.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+ℹ ｢wdm｣: Compiling...
+                                                                                          
+Date: 2019-06-19T02:20:46.153Z - Hash: 0b475798b79be7def4d4 - Time: 343ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 23.9 kB [initial] [rendered]
+ℹ ｢wdm｣: Compiled successfully.
+MacBook-Pro-de-Alexandro:proyecto-angular alexmarcelo$ 

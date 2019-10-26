@@ -1,0 +1,180 @@
+Last login: Thu Jun 13 19:23:38 on ttys001
+MacBook-Pro-de-Alexandro:~ alexmarcelo$ cd  /Users/alexmarcelo/Documents/Documents/Tec\ de\ Monterrey/Profesional/Verano\ 2019/Desarrollo_Web/Actividades_Clase 
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+clase_2_SASS			clase_5_SASSBootstrapHtml
+clase_3_Bootstrap		clase_8_typescript
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ npm install -g @loopback/cli
+⸨ ░░░░░░░░░░░░░░░░░⸩ ⠇ loadDep:npm-package-arg: sill resolveWithNewModule semve/Users/alexmarcelo/.nvm/versions/node/v9.11.2/bin/lb4 -> /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/@loopback/cli/bin/cli-main.js
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/.nvm/versions/node/v9.11.2/lib/node_modules/@loopback/cli/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
++ @loopback/cli@1.17.2
+added 598 packages in 33.623s
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 6.9.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ lb4 --version
+@loopback/cli version: 1.17.2
+
+@loopback/* dependencies:
+  - @loopback/authentication: ^2.1.4
+  - @loopback/boot: ^1.4.3
+  - @loopback/build: ^2.0.2
+  - @loopback/context: ^1.20.1
+  - @loopback/core: ^1.8.4
+  - @loopback/metadata: ^1.2.4
+  - @loopback/openapi-spec-builder: ^1.2.4
+  - @loopback/openapi-v3-types: ^1.1.4
+  - @loopback/openapi-v3: ^1.6.4
+  - @loopback/repository-json-schema: ^1.7.2
+  - @loopback/repository: ^1.8.1
+  - @loopback/rest: ^1.16.2
+  - @loopback/testlab: ^1.6.2
+  - @loopback/docs: ^1.25.0
+  - @loopback/example-hello-world: ^1.2.4
+  - @loopback/example-log-extension: ^1.2.4
+  - @loopback/example-rpc-server: ^1.2.4
+  - @loopback/example-todo: ^1.6.4
+  - @loopback/example-soap-calculator: ^1.6.5
+  - @loopback/service-proxy: ^1.2.4
+  - @loopback/http-caching-proxy: ^1.1.4
+  - @loopback/http-server: ^1.4.3
+  - @loopback/example-todo-list: ^1.8.0
+  - @loopback/dist-util: ^0.4.0
+  - @loopback/rest-explorer: ^1.2.4
+  - @loopback/eslint-config: ^1.1.2
+  - @loopback/example-express-composition: ^1.4.4
+  - @loopback/example-greeter-extension: ^1.3.4
+  - @loopback/booter-lb3app: ^1.2.4
+  - @loopback/example-lb3-application: ^1.1.4
+  - @loopback/example-greeting-app: ^1.1.4
+  - @loopback/example-context: ^1.2.4
+  - @loopback/repository-tests: ^0.2.1
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ lb4 app
+? Project name: alumnos_api
+? Project description: API de alumnos del Tec
+? Project root directory: alumnos-api
+? Application class name: AlumnosApiApplication
+? Select features to enable in the project (Press <space> to select, <a> to tog
+gle all, <i> to invert selection)Enable eslint, Enable prettier, Enable mocha, 
+Enable loopbackBuild, Enable vscode, Enable docker, Enable repositories, Enable
+ services
+   create .eslintignore
+   create .eslintrc.js
+   create .mocharc.json
+   create .npmrc
+   create .prettierignore
+   create .prettierrc
+   create DEVELOPING.md
+   create README.md
+   create index.ts
+   create package.json
+   create tsconfig.json
+   create .vscode/settings.json
+   create .vscode/tasks.json
+   create .gitignore
+   create .dockerignore
+   create Dockerfile
+   create index.js
+   create public/index.html
+   create src/application.ts
+   create src/index.ts
+   create src/migrate.ts
+   create src/sequence.ts
+   create src/__tests__/README.md
+   create src/controllers/README.md
+   create src/controllers/index.ts
+   create src/controllers/ping.controller.ts
+   create src/datasources/README.md
+   create src/models/README.md
+   create src/repositories/README.md
+   create src/__tests__/acceptance/home-page.acceptance.ts
+   create src/__tests__/acceptance/ping.controller.acceptance.ts
+   create src/__tests__/acceptance/test-helper.ts
+npm WARN deprecated superagent@3.8.3: Please note that v5.0.1+ of superagent removes User-Agent header by default, therefore you may need to add it yourself (e.g. GitHub blocks requests without a User-Agent header).  This notice will go away with v5.0.2+ once it is released.
+
+> core-js@2.6.9 postinstall /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN alumnos_api@1.0.0 No license field.
+
+added 505 packages in 12.008s
+
+Application alumnos_api was created in alumnos-api.
+
+Next steps:
+
+$ cd alumnos-api
+$ npm start
+
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ ls
+alumnos-api			clase_5_SASSBootstrapHtml
+clase_2_SASS			clase_8_typescript
+clase_3_Bootstrap		clase_9_angular
+clase_4_SASSBootstrapHtml
+MacBook-Pro-de-Alexandro:Actividades_Clase alexmarcelo$ cd alumnos-api/
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ npm start
+
+> alumnos_api@1.0.0 prestart /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> npm run build
+
+
+> alumnos_api@1.0.0 build /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> lb-tsc
+
+
+> alumnos_api@1.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> node .
+
+Server is running at http://[::1]:3000
+Try http://[::1]:3000/ping
+^CMacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ lb4 controller hola
+Controller Hola will be created in src/controllers/hola.controller.ts
+
+? What kind of controller would you like to generate? Empty Controller
+   create src/controllers/hola.controller.ts
+   update src/controllers/index.ts
+
+Controller Hola was created in src/controllers/
+
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ npm start
+
+> alumnos_api@1.0.0 prestart /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> npm run build
+
+
+> alumnos_api@1.0.0 build /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> lb-tsc
+
+
+> alumnos_api@1.0.0 start /Users/alexmarcelo/Documents/Documents/Tec de Monterrey/Profesional/Verano 2019/Desarrollo_Web/Actividades_Clase/alumnos-api
+> node .
+
+Server is running at http://[::1]:3000
+Try http://[::1]:3000/ping
+^C
+MacBook-Pro-de-Alexandro:alumnos-api alexmarcelo$ 

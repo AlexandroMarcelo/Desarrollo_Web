@@ -1,0 +1,11 @@
+{
+  "name": "mongo_conn",
+  "connector": "mongodb",
+  "url": "mongodb+srv://alex:alexandro1998@cluster0-qbjef.mongodb.net/test?retryWrites=true&w=majority",
+  "host": "cluster0-qbjef.mongodb.net",
+  "port": 27017,
+  "user": "alex",
+  "password": "alexandro1998",
+  "database": "verano2019",
+  "useNewUrlParser": true
+}
